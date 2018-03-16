@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background: url("background/B4.jpg") center center;
+            background-image: 100%;
+        }
+        /* CSS的特效 */
+
+        .drop-shadow {
+            -webkit-filter: drop-shadow(5px 5px 5px #333);
+        }
+
+        .blur {
+            -webkit-filter: blur(10px);
+        }
+
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        
+
+        section {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* sticky nav bar bigin */
+
+        ul {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #C29A9B;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        ul>li {
+            float: left;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'cwtexyen', serif;
+        }
+
+        li a:hover {
+            background-color: rgb(160, 123, 123);
+            ;
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:visted {
+            text-decoration: none;
+
+        }
+
+        a:actived {
+            text-decoration: none;
+            
+
+        }
+
+        .active {
+            background-color: #EF9DAE;
+        }
+
+        .active:hover {
+            background-color: rgb(155, 71, 89);
+
+
+        }
+
+        /* right column bigin */
+
+        .rightcol {
+            width: 28%;
+            height: 100%;
+            display: inline-block;
+            padding: 15px;
+            overflow: visible;
+        }
+
+        #head {
+            display: block;
+            margin: 10px auto;
+            border: 3px solid white;
+        }
+
+        #name {
+            text-align: center;
+            font-family: 'cwtexkai';
+
+        }
+
+        .rightcol i {
+            padding-right: 10px;
+            padding-top: 10px;
+
+        }
+
+        .rightcol span {
+            font-size: 1vw;
+
+        }
+
+
+        /* article bigin */
+
+        article {
+            width: 72%;
+            height: 100%;
+            float: left;
+            margin-top:23px;
+
+        }
+
+        /* footer bign */
+
+        footer {
+            width: 100%;
+            display: inline-block;
+            background: gray;
+        }
+
+
+        .box {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            background: #E9D5CA;
+        }
+
+        @media(max-width:700px) {
+
+            article,
+            .rightcol,
+            section {
+                width: 100%;
+            }
+
+        }
+
+
+        @media(max-width:400px) {
+
+            ul>li {
+                width: 100%;
+
+            }
+
+            .item {
+
+                height: 100px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body >
+    <section>
+
+        <!-- SLIDSHOW -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="slide/1.png" alt="Los Angeles" style="width:100%; height:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="slide/2.png" alt="Chicago" style="width:100%;height:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="slide/3.png" alt="New york" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src="slide/4.png" alt="New york" style="width:100%;height:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Sticky Nav Bar  -->
+        <ul >
+            <li>
+                <a class="active" href="home.html" target="demo">首頁</a>
+            </li>
+            <li>
+                <a href="cv.html" target="demo">學經歷</a>
+            </li>
+            <li>
+                <a href="works.html" target="demo">作品集</a>
+            </li>
+
+            <li>
+                <a href="http://franky58246.pixnet.net/blog" target="_blank">部落格</a>
+            </li>
+
+        </ul>
+
+
+
+
+        <!-- article  -->
+
+        <article>
+            <iframe src="home.html" frameborder="0" width="100%" height="700px" name="demo" style="overflow:visible"></iframe>
+        </article>
+
+        <!-- right Column  -->
+
+        <div class="rightcol" >
+
+            <iframe src="right.html" frameborder="0" width="100%" height=800px; scrolling="no";style="overflow:visible"></iframe>
+
+
+            <!-- <img id="head" src="img/head.jpg" alt="me" width="130px" height="130px">
+
+            <h3 id="name">李家豪</h3>
+            <p style="font-size:1.3em">台中太平人，畢業於國立政治大學廣播電視學系，記者生涯一年半，主要採訪板橋土城的地方新聞。
+                <br>
+                <br> 過了26年太輕鬆的生活，決定要對自己嚴格一點，目前正在轉職工程師的路上匍匐前進
+            </p>
+            <i class="far fa-address-book fa-2x"> 聯絡方式</i>
+
+            </hr>
+            <br>
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+
+            <span>新北市土城區中央路二段278巷4-1號6F</span>
+            <br>
+            <i class="fas fa-envelope fa-2x"></i>
+
+            <span style="font-size:16px">frank58246@gmail.com</span>
+            <br>
+            <i class="fas fa-phone fa-2x"></i>
+            <span style="font-size:18px">0963-237-831</span> -->
+
+
+
+        </div>
+
+
+        
+
+        <!-- Footer  -->
+
+        <footer>
+
+            <div class="box">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aspernatur beatae iste, architecto deserunt
+                    aliquid natus adipisci incidunt possimus veritatis temporibus rem non est in enim dolores nesciunt dolorum.
+                    Minima!
+                </p>
+
+
+            </div>
+
+        </footer>
+
+
+
+
+    </section>
+
+</body>
+
+</html>
